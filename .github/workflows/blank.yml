@@ -36,7 +36,7 @@ jobs:
           sleep 5
 
       - name: Test connectivity to dynamodb-local container
-        run: curl http://dynamodb-local:8000
+        run: curl http://localhost:8000
 
       - name: Run test step 2
         run: echo STEP 2
