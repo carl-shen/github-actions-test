@@ -23,6 +23,8 @@ jobs:
     services:
       dynamodb-local:
         image: amazon/dynamodb-local
+        ports:
+          - "8000:8000"
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
